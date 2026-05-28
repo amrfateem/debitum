@@ -109,7 +109,7 @@ public class PersonSumListFragment
         if(pwtList == null) return;
 
         updateTotalHeader(PersonWithTransactions.getSum(pwtList));
-        @ColorInt int secondaryColorRGB = ColorUtils.getAttributeColor(requireContext(), R.attr.colorSecondary);
+        @ColorInt int secondaryColorRGB = ColorUtils.getAttributeColor(requireContext(), com.google.android.material.R.attr.colorSecondary);
 
         // prepare sorting
             int by = orderViewModel.getOrderBy();

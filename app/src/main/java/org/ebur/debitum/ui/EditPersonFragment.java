@@ -251,7 +251,7 @@ public class EditPersonFragment extends DialogFragment {
 
             // this will yield either the photo (if uri != null and a photo is there) or a
             // generated color based on the person's color index
-            @ColorInt int secondaryColorRGB = ColorUtils.getAttributeColor(requireContext(), R.attr.colorSecondary);
+            @ColorInt int secondaryColorRGB = ColorUtils.getAttributeColor(requireContext(), com.google.android.material.R.attr.colorSecondary);
             avatarDrawable = contactsHelper.makeAvatarDrawable(
                     contactsHelper.getContactImage(uri),
                     viewModel.getEditedPerson().getColor(secondaryColorRGB)
