@@ -14,7 +14,7 @@
         <item name="colorSecondary">@color/red_valencia</item>
         <item name="colorSecondaryContainer">@color/red_coral</item>
         <item name="colorOnSecondary">@color/white_50</item>
-        <item name="colorBackground">@color/white_50</item>
+        <item name="android:colorBackground">@color/white_50</item>
         <item name="colorSurface">@color/white_50</item>
         <item name="colorError">@color/lent_red</item>
         <item name="colorOnBackground">@color/black_900</item>
@@ -37,7 +37,7 @@
         <item name="colorOnError">@color/white_50</item>
 
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryContainer</item>
 
         <!--Component styles-->
         <item name="materialAlertDialogTheme">@style/ThemeOverlay.Debitum.AlertDialog</item>

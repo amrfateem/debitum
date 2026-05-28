@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Widget.Debitum.Button.OutlinedButton.IconOnly" parent="Widget.Material3.OutlinedButton">
+    <style name="Widget.Debitum.Button.OutlinedButton.IconOnly" parent="Widget.Material3.Button.OutlinedButton">
         <item name="iconTint">?attr/colorSecondaryVariant</item>
         <item name="iconPadding">0dp</item>
         <item name="android:insetTop">0dp</item>
@@ -67,7 +67,7 @@
         <item name="android:fontFamily">@font/robotoslab_light</item>
         <item name="android:textSize">20sp</item>
     </style>
-    <style name="TextAppearance.Debitum.ListOweLent" parent="TextAppearance.Material3.Overline"/>
+    <style name="TextAppearance.Debitum.ListOweLent" parent="TextAppearance.Material3.LabelSmall"/>
     <style name="listTimestamp" parent="TextAppearance.Material3.BodySmall">
         <item name="android:alpha">0.5</item>
     </style>

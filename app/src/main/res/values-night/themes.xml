@@ -8,7 +8,7 @@
         <item name="colorOnPrimary">@color/white_50</item>
         <item name="colorSecondary">@color/red_coral</item>
         <item name="colorSecondaryContainer">@color/red_coral</item>
-        <item name="colorBackground">@color/black_900</item>
+        <item name="android:colorBackground">@color/black_900</item>
         <item name="colorSurface">@color/black_800</item>
         <item name="colorOnBackground">@color/white_50</item>
         <item name="colorOnSurface">@color/white_50</item>
