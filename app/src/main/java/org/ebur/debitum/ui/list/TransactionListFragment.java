@@ -13,7 +13,7 @@ import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.appbar.MaterialToolbar;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
@@ -54,7 +54,7 @@ public class TransactionListFragment
 
     public static final String ARG_FILTER_PERSON = "filterPerson";
     protected PersonFilterViewModel personFilterViewModel;
-    private Toolbar filterBar;
+    private MaterialToolbar filterBar;
 
     @Override
     @LayoutRes

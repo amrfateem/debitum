@@ -10,7 +10,7 @@ import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.appbar.MaterialToolbar;
 import androidx.fragment.app.DialogFragment;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
@@ -43,7 +43,7 @@ public class HtmlFragment extends DialogFragment {
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        Toolbar toolbar = view.findViewById(R.id.dialog_toolbar);
+        MaterialToolbar toolbar = view.findViewById(R.id.dialog_toolbar);
         // use label from navigation graph's destination as toolbar title
         NavController nav = NavHostFragment.findNavController(this);
         NavDestination dest = nav.getCurrentDestination();

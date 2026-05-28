@@ -2,15 +2,23 @@
     <!--Top level DayNight theme to be used in AndroidManifest.xml-->
     <style name="Theme.Debitum" parent="Base.Theme.Debitum"/>
     <!--Base custom theme which will be shared between both light and dark theme variants-->
-    <style name="Base.Theme.Debitum" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.Debitum" parent="Theme.Material3.DayNight.NoActionBar">
         <!--Material color attributes (light theme) -->
         <!--colorPrimary colors map to components and elements, such as app bars and buttons. -->
         <!--colorSecondary colors are most often used as accents on components, such as FABs and -->
         <!--selection controls.-->
+        <!-- Material3 color roles mapping to existing palette -->
         <item name="colorPrimary">@color/grey_fjord</item>
-        <item name="colorPrimaryVariant">@color/grey_aztec</item>
+        <item name="colorPrimaryContainer">@color/grey_aztec</item>
+        <item name="colorOnPrimary">@color/white_50</item>
         <item name="colorSecondary">@color/red_valencia</item>
-        <item name="colorSecondaryVariant">@color/red_totem_pole</item>
+        <item name="colorSecondaryContainer">@color/red_coral</item>
+        <item name="colorOnSecondary">@color/white_50</item>
+        <item name="colorBackground">@color/white_50</item>
+        <item name="colorSurface">@color/white_50</item>
+        <item name="colorError">@color/lent_red</item>
+        <item name="colorOnBackground">@color/black_900</item>
+        <item name="colorOnSurface">@color/black_900</item>
 
         <!--colorBackground appears behind scrollable content and is used for the default window-->
         <!--background. colorSurface is mapped to the surface of components such as cards, sheets-->

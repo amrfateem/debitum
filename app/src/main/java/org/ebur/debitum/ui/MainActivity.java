@@ -9,7 +9,7 @@ import androidx.annotation.IdRes;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.appbar.MaterialToolbar;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.item_dest,
                 R.id.settings_dest)
                 .build();
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        MaterialToolbar toolbar = findViewById(R.id.toolbar);
         NavigationUI.setupWithNavController(toolbar, nav, appBarConfiguration);
         setSupportActionBar(toolbar);
     }

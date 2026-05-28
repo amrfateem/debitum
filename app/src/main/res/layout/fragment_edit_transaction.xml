@@ -50,7 +50,7 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/button_new_person"
                     style="@style/Widget.Debitum.Button.OutlinedButton.IconOnly"
                     android:layout_width="48dp"

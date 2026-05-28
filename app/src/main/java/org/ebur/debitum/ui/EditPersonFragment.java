@@ -18,7 +18,7 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
-import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.appbar.MaterialToolbar;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
@@ -49,7 +49,7 @@ public class EditPersonFragment extends DialogFragment {
     private EditPersonViewModel viewModel;
     private ContactsHelper contactsHelper;
 
-    private Toolbar toolbar;
+    private MaterialToolbar toolbar;
     private TextInputLayout editNameLayout;
     private TextInputEditText editName;
     private TextInputEditText editNote;

@@ -10,7 +10,7 @@
     android:clipChildren="false"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
+    <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/filter_bar"
         style="@style/ThemeOverlay.Debitum.FilterBar"
         android:transitionName="@string/transition_name_person_filter"

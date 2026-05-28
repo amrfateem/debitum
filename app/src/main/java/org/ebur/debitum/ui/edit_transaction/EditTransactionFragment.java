@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.Button;
+import com.google.android.material.button.MaterialButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
@@ -22,7 +22,7 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.appbar.MaterialToolbar;
 import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavBackStackEntry;
@@ -76,7 +76,7 @@ public class EditTransactionFragment extends DialogFragment {
     private EditTransactionViewModel viewModel;
     private PersonFilterViewModel personFilterViewModel;
 
-    private Toolbar toolbar;
+    private MaterialToolbar toolbar;
     private TextInputLayout spinnerNameLayout;
     private AutoCompleteTextView spinnerName;
     private ArrayAdapter<String> spinnerNameAdapter;
@@ -164,7 +164,7 @@ public class EditTransactionFragment extends DialogFragment {
         // setup views
         toolbar = root.findViewById(R.id.dialog_toolbar);
         spinnerNameLayout = root.findViewById(R.id.spinner_name);
-        Button buttonNewPerson = root.findViewById(R.id.button_new_person);
+        MaterialButton buttonNewPerson = root.findViewById(R.id.button_new_person);
         buttonNewPerson.setOnClickListener(this::onNewPersonAction);
         gaveRadio = root.findViewById(R.id.radioButton_gave);
 
