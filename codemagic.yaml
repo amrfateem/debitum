@@ -1,0 +1,22 @@
+workflows:
+  android-gradle-build:
+    name: Android Gradle build (assembleDebug)
+    max_build_duration: 60
+    environment:
+      # Not a Flutter app
+      flutter: false
+      # Choose debug or release: set GRADLE_TASK to assembleRelease for signed release
+      vars:
+        GRADLE_TASK: assembleDebug
+
+    scripts:
+      - echo "== Environment info =="
+      - java -version || true
+      - echo "JAVA_HOME: $JAVA_HOME"
+      - echo "== Use wrapper to run Gradle =="
+      - chmod +x ./gradlew
+      - ./gradlew --no-daemon --stacktrace $GRADLE_TASK
+
+    artifacts:
+      - app/build/outputs/**/*.apk
+      - app/build/outputs/**/*.aab
